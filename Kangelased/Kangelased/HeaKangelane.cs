@@ -14,7 +14,7 @@ namespace Kangelased
 
         public override void V6iduK6ne()
         {
-            Console.WriteLine("Ma päästsin teid kõiki!");
+            Console.WriteLine("Ma päästan teid kõiki!");
         }
         public void KasutaV6imet()
         {
