@@ -8,10 +8,10 @@ namespace Kangelased
 {
 	abstract class Kangelane: ISuperV6ime
 	{
-		private string _Nimi;
+		protected string _Nimi;
 		//private string _Asukoht;
-        private string _SuperNimi;
-        private string _v6ime;
+        protected string _SuperNimi;
+        protected string _v6ime;
 
 		public Kangelane(string Nimi, /*string Asukoht,*/ string SuperNimi, string V6ime)
 		{
