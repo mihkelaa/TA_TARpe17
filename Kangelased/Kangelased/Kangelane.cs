@@ -6,36 +6,38 @@ using System.Threading.Tasks;
 
 namespace Kangelased
 {
-	class Kangelane
+	abstract class Kangelane: ISuperV6ime
 	{
 		private string _Nimi;
-		private string _Asukoht;
+		//private string _Asukoht;
         private string _SuperNimi;
         private string _v6ime;
 
-		public Kangelane(string Nimi, string Asukoht, string SuperNimi, string v6ime)
+		public Kangelane(string Nimi, /*string Asukoht,*/ string SuperNimi, string V6ime)
 		{
-			this.Nimi = Nimi;
-			this.Asukoht = Asukoht;
-            this._SuperNimi = SuperNimi;
-            this._v6ime = v6ime;
+			Nimi = _Nimi;
+			//this.Asukoht = Asukoht;
+            SuperNimi = _SuperNimi;
+            V6ime = _v6ime;
 		}
+        
+        
 
-		public string Nimi { get => _Nimi; set => _Nimi = value; }
-		public string Asukoht { get => _Asukoht; set => _Asukoht = value; }
+        //public string Nimi { get => _Nimi; set => _Nimi = value; }
+        //public string Asukoht { get => _Asukoht; set => _Asukoht = value; }
 
-		public int Päästa(int Ohustatuid)
-		{
-			return (int)Math.Round(Ohustatuid * .95);
-		}
-		public override string ToString()
-		{
-			return Nimi + " hoiab " + Asukoht + " turvalisena.";
-		}
+        //public int Päästa(int Ohustatuid)
+        //{
+        //    return (int)Math.Round(Ohustatuid * .95);
+        //}
+        //public override string ToString()
+        //{
+        //    return Nimi + " hoiab " + Asukoht + " turvalisena.";
+        //}
 
         public string AnnaNimi()
         {
-            return Nimi;
+            return _Nimi;
         }
         public string AnnaSuperNimi()
         {
@@ -46,5 +48,6 @@ namespace Kangelased
         {
             return _v6ime;
         }
+        public abstract void V6iduK6ne();
 	}
 }
