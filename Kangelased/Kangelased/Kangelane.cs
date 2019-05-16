@@ -20,16 +20,16 @@ namespace Kangelased
             SuperNimi = _SuperNimi;
             V6ime = _v6ime;
 		}
-        
-        
+
+
 
         //public string Nimi { get => _Nimi; set => _Nimi = value; }
         //public string Asukoht { get => _Asukoht; set => _Asukoht = value; }
 
-        //public int Päästa(int Ohustatuid)
-        //{
-        //    return (int)Math.Round(Ohustatuid * .95);
-        //}
+        public int Päästa(int Ohustatuid)
+        {
+            return (int)Math.Round(Ohustatuid * .95);
+        }
         //public override string ToString()
         //{
         //    return Nimi + " hoiab " + Asukoht + " turvalisena.";
