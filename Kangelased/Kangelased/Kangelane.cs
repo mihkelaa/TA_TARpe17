@@ -10,15 +10,11 @@ namespace Kangelased
 	{
 		private string _Nimi;
 		private string _Asukoht;
-        private string _SuperNimi;
-        private string _v6ime;
 
-		public Kangelane(string Nimi, string Asukoht, string SuperNimi, string v6ime)
+		public Kangelane(string Nimi, string Asukoht)
 		{
 			this.Nimi = Nimi;
 			this.Asukoht = Asukoht;
-            this._SuperNimi = SuperNimi;
-            this._v6ime = v6ime;
 		}
 
 		public string Nimi { get => _Nimi; set => _Nimi = value; }
@@ -32,19 +28,5 @@ namespace Kangelased
 		{
 			return Nimi + " hoiab " + Asukoht + " turvalisena.";
 		}
-
-        public string AnnaNimi()
-        {
-            return Nimi;
-        }
-        public string AnnaSuperNimi()
-        {
-            return _SuperNimi;
-        }
-        
-        public string AnnaV6ime()
-        {
-            return _v6ime;
-        }
 	}
 }
